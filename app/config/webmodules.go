@@ -66,7 +66,7 @@ func ConfigureFiber(app *fiber.App) {
 	})
 
 	glrecaptcha.Setup(app, glrecaptcha.Config{
-		RecaptchaSecretKey: glutil.GetEnv(constants.ENV_RECAPTCHA_SECRET_KEY, "6LddOEYkAAAAAKol3xM3d-m5pYRxuF6ttyNo4cHY"),
+		RecaptchaSecretKey: glutil.GetEnv(constants.ENV_RECAPTCHA_SECRET_KEY),
 		Middleware:         glauth.NewAnnonymousMiddleware(),
 		ApiPrefix:          apiPrefix,
 	})

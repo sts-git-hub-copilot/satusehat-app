@@ -1,6 +1,7 @@
 /log
 /ssbackend
 /.env
+.env
 cek
 deploy
 /run*
