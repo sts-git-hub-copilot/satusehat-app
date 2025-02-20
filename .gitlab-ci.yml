@@ -1,0 +1,27 @@
+stages: # List of stages for jobs, and their order of execution
+  - deploy
+
+deploy-dev: # This job runs in the build stage, which runs first.
+  stage: deploy
+  when: manual
+  tags:
+    - golang
+  image: docker.solusiteknologi.co.id/cicd-golang:1.0.0
+  script:
+    - export SSH_TUNNEL="${SSH_TUNNEL:--p 222 -L *:2222:192.168.1.11:22 sts@semar.taskhub.id}"
+    - export SSH_SERVER="${SSH_SERVER:--p 2222 sts@localhost}"
+    - export DATENOW="`date +%Y%m%d`"
+    - export SUB_PIDS="`mktemp`"
+    - source /usr/local/bin/jleaf-script-util
+    - if [ -n "$SSH_TUNNEL" ]; then spawn_ssh_tunnel_thread "$SSH_TUNNEL" "$SUB_PIDS" && echo "[DONE][`date`] SSH tunnel is running"; fi
+    - check_ssh_ok "${SSH_SERVER:--p 2222 sts@semar.taskhub.id}"
+    - docker_login docker.solusiteknologi.co.id ${DOCKER_REGISTRY_USER:-sts} ${DOCKER_REGISTRY_PASSWORD:-OneHeartOneDirection}
+    - go mod download -x
+    - ./update_glcore.sh
+    - go mod tidy
+    - ./generate-docs.sh
+    - go build
+    - docker-compose build
+    - docker-compose push
+    - ssh_remote_comand "${SSH_SERVER:--p 2222 sts@semar.taskhub.id}" "cd \"${APP_HOME:-/home/sts/satusehat-dev}\" && docker-compose pull app && docker-compose up -d app"
+    - echo "ALL DONE"

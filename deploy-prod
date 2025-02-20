@@ -1,0 +1,4 @@
+dt=$(date '+%d/%m/%Y %H:%M:%S')
+./update_glcore.sh && go mod tidy && ./generate-docs.sh && CGO_ENABLED=0 go build && MODE=-prod docker-compose build && MODE=-prod docker-compose push
+echo "============================= Done Build & Push Production ==============================="
+echo "================================== $dt ==================================="
