@@ -1,0 +1,6 @@
+{
+    "sonarlint.connectedMode.project": {
+        "connectionId": "sts-git-hub-copilot",
+        "projectKey": "sts-git-hub-copilot_satusehat-app"
+    }
+}
