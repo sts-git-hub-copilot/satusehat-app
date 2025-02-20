@@ -8605,7 +8605,7 @@ const docTemplate = `{
                 },
                 "taskName": {
                     "type": "string",
-                    "example": "https://id.dev.kelolabisnis.id/master/account"
+                    "example": "https://id.dev.solusiteknologi.co.id/master/account"
                 },
                 "tenantId": {
                     "type": "integer",
@@ -10525,7 +10525,7 @@ const docTemplate = `{
                 },
                 "email": {
                     "type": "string",
-                    "example": "user@kelolabisnis.id"
+                    "example": "user@solusiteknologi.co.id"
                 },
                 "originUrl": {
                     "type": "string",
@@ -10544,7 +10544,7 @@ const docTemplate = `{
             "properties": {
                 "email": {
                     "type": "string",
-                    "example": "user@kelolabisnis.id"
+                    "example": "user@solusiteknologi.co.id"
                 },
                 "newPassword": {
                     "type": "string",
@@ -10632,7 +10632,7 @@ const docTemplate = `{
                 },
                 "email": {
                     "type": "string",
-                    "example": "user@kelolabisnis.id"
+                    "example": "user@solusiteknologi.co.id"
                 },
                 "expiredAt": {
                     "type": "string",
@@ -10802,11 +10802,11 @@ const docTemplate = `{
                 },
                 "email": {
                     "type": "string",
-                    "example": "example@kelolabisnis.id"
+                    "example": "example@solusiteknologi.co.id"
                 },
                 "host": {
                     "type": "string",
-                    "example": "kelolabisnis.id"
+                    "example": "solusiteknologi.co.id"
                 },
                 "schemaCode": {
                     "type": "string",
@@ -11457,7 +11457,7 @@ const docTemplate = `{
                 },
                 "imageUrl": {
                     "type": "string",
-                    "example": "https://dev.kelolabisnis.id/img/boarding1.png"
+                    "example": "https://dev.solusiteknologi.co.id/img/boarding1.png"
                 },
                 "phone": {
                     "type": "string",
@@ -11681,7 +11681,7 @@ const docTemplate = `{
                 },
                 "imageUrl": {
                     "type": "string",
-                    "example": "https://dev.kelolabisnis.id/img/boarding1.png"
+                    "example": "https://dev.solusiteknologi.co.id/img/boarding1.png"
                 },
                 "phone": {
                     "type": "string",
@@ -11880,7 +11880,7 @@ const docTemplate = `{
                 },
                 "imageUrl": {
                     "type": "string",
-                    "example": "https://dev.kelolabisnis.id/img/boarding1.png"
+                    "example": "https://dev.solusiteknologi.co.id/img/boarding1.png"
                 },
                 "ouCode": {
                     "type": "string"
