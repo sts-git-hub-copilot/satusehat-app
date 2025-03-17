@@ -1,0 +1,152 @@
+time=2025-03-12T16:07:30+07:00 level=debug msg=Init log successfully setup
+time=2025-03-12T16:07:30+07:00 level=debug msg=Connecting to database postgresql://sts:*****@localhost:5433/satusehat?pool_max_conns=5&pool_min_conns=1&application_name=GoleafApp&pool_max_conn_idle_time=30s
+time=2025-03-12T16:07:30+07:00 level=info msg=Starting pool with max connection  5
+time=2025-03-12T16:07:30+07:00 level=debug msg=Do once Init server
+time=2025-03-12T16:07:30+07:00 level=debug msg=USE NewFluentdLoggerMdIn
+time=2025-03-12T16:07:30+07:00 level=debug msg=USE NewFluentdLoggerMdOut
+time=2025-03-12T16:07:30+07:00 level=debug msg=0001-01-01 00:00:00 +0000 UTC
+time=2025-03-12T16:07:30+07:00 level=debug msg= cekk : {
+  "sample": "2025-03-12T09:07:30+00:00"
+}
+time=2025-03-12T16:07:30+07:00 level=debug msg=2025-03-11T03:56:49+00:00
+time=2025-03-12T16:07:30+07:00 level=debug msg=Transaction error, rolled back : success
+time=2025-03-12T16:09:03+07:00 level=debug msg=Init log successfully setup
+time=2025-03-12T16:09:03+07:00 level=debug msg=Connecting to database postgresql://sts:*****@localhost:5433/satusehat?pool_max_conns=5&pool_min_conns=1&application_name=GoleafApp&pool_max_conn_idle_time=30s
+time=2025-03-12T16:09:03+07:00 level=info msg=Starting pool with max connection  5
+time=2025-03-12T16:09:03+07:00 level=debug msg=Do once Init server
+time=2025-03-12T16:09:03+07:00 level=debug msg=USE NewFluentdLoggerMdIn
+time=2025-03-12T16:09:03+07:00 level=debug msg=USE NewFluentdLoggerMdOut
+time=2025-03-12T16:09:03+07:00 level=debug msg=2025-03-11T10:56:49+00:00
+time=2025-03-12T16:09:03+07:00 level=debug msg= cekk : {
+  "sample": "2025-03-12T09:09:03+00:00"
+}
+time=2025-03-12T16:09:03+07:00 level=debug msg=2025-03-11T03:56:49+00:00
+time=2025-03-12T16:09:03+07:00 level=debug msg=Transaction error, rolled back : success
+time=2025-03-12T23:43:56+07:00 level=debug msg=Init log successfully setup
+time=2025-03-12T23:43:56+07:00 level=debug msg=Connecting to database postgresql://sts:*****@localhost:5433/satusehat?pool_max_conns=5&pool_min_conns=1&application_name=GoleafApp&pool_max_conn_idle_time=30s
+time=2025-03-12T23:43:56+07:00 level=info msg=Starting pool with max connection  5
+time=2025-03-12T23:43:56+07:00 level=debug msg=Do once Init server
+time=2025-03-12T23:43:56+07:00 level=debug msg=USE NewFluentdLoggerMdIn
+time=2025-03-12T23:43:56+07:00 level=debug msg=USE NewFluentdLoggerMdOut
+time=2025-03-12T23:43:56+07:00 level=debug msg=2025-03-11T10:56:49+00:00
+time=2025-03-12T23:43:56+07:00 level=debug msg= cekk : {
+  "sample": "2025-03-12T16:43:56+00:00"
+}
+time=2025-03-12T23:43:56+07:00 level=debug msg=2025-03-11T03:56:49+00:00
+time=2025-03-12T23:43:56+07:00 level=debug msg=Transaction error, rolled back : errorCode: error failed to fetch encounter input errorArgs:[error occured on query [ SELECT fss_get_idss_patient(A.patient_id) AS idss_patient,
+                     fss_get_patient_name(A.patient_id) AS patient_name,
+                     B.idssen AS idss_encounter,
+                     A.datetime_process AS process_time
+              FROM ss_trx A
+              INNER JOIN ss_trx_idssen B ON B.trx_id = A.trx_id AND B.status = :ENCOUNTER
+              WHERE A.trx_id = :trxId ] : scany: query one result row: ERROR: function fss_get_idss_patient(character varying) does not exist (SQLSTATE 42883)]
+time=2025-03-12T23:46:02+07:00 level=debug msg=Init log successfully setup
+time=2025-03-12T23:46:02+07:00 level=debug msg=Connecting to database postgresql://sts:*****@localhost:5433/satusehat?pool_max_conns=5&pool_min_conns=1&application_name=GoleafApp&pool_max_conn_idle_time=30s
+time=2025-03-12T23:46:02+07:00 level=info msg=Starting pool with max connection  5
+time=2025-03-12T23:46:02+07:00 level=debug msg=Do once Init server
+time=2025-03-12T23:46:02+07:00 level=debug msg=USE NewFluentdLoggerMdIn
+time=2025-03-12T23:46:02+07:00 level=debug msg=USE NewFluentdLoggerMdOut
+time=2025-03-12T23:46:02+07:00 level=debug msg=2025-03-11T10:56:49+00:00
+time=2025-03-12T23:46:02+07:00 level=debug msg= cekk : {
+  "sample": "2025-03-12T16:46:02+00:00"
+}
+time=2025-03-12T23:46:02+07:00 level=debug msg=2025-03-11T03:56:49+00:00
+time=2025-03-12T23:46:02+07:00 level=debug msg= Diagnosa Temp -> 
+time=2025-03-12T23:46:02+07:00 level=debug msg=Transaction error, rolled back : success
+time=2025-03-12T23:47:05+07:00 level=debug msg=Init log successfully setup
+time=2025-03-12T23:47:05+07:00 level=debug msg=Connecting to database postgresql://sts:*****@localhost:5433/satusehat?pool_max_conns=5&pool_min_conns=1&application_name=GoleafApp&pool_max_conn_idle_time=30s
+time=2025-03-12T23:47:05+07:00 level=info msg=Starting pool with max connection  5
+time=2025-03-12T23:47:05+07:00 level=debug msg=Do once Init server
+time=2025-03-12T23:47:05+07:00 level=debug msg=USE NewFluentdLoggerMdIn
+time=2025-03-12T23:47:05+07:00 level=debug msg=USE NewFluentdLoggerMdOut
+time=2025-03-12T23:47:05+07:00 level=debug msg=2025-03-11T10:56:49+00:00
+time=2025-03-12T23:47:05+07:00 level=debug msg= cekk : {
+  "sample": "2025-03-12T16:47:05+00:00"
+}
+time=2025-03-12T23:47:05+07:00 level=debug msg=2025-03-11T03:56:49+00:00
+time=2025-03-12T23:47:05+07:00 level=debug msg= Diagnosa Temp -> {
+                "system": "http://hl7.org/fhir/sid/icd-10",
+                "code": "1",
+                "display": "Diagnosa 1"
+            }{
+                "system": "http://hl7.org/fhir/sid/icd-10",
+                "code": "2",
+                "display": "Diagnosa 2"
+            }
+time=2025-03-12T23:47:05+07:00 level=debug msg=Transaction error, rolled back : success
+time=2025-03-12T23:48:50+07:00 level=debug msg=Init log successfully setup
+time=2025-03-12T23:48:50+07:00 level=debug msg=Connecting to database postgresql://sts:*****@localhost:5433/satusehat?pool_max_conns=5&pool_min_conns=1&application_name=GoleafApp&pool_max_conn_idle_time=30s
+time=2025-03-12T23:48:50+07:00 level=info msg=Starting pool with max connection  5
+time=2025-03-12T23:48:50+07:00 level=debug msg=Do once Init server
+time=2025-03-12T23:48:50+07:00 level=debug msg=USE NewFluentdLoggerMdIn
+time=2025-03-12T23:48:50+07:00 level=debug msg=USE NewFluentdLoggerMdOut
+time=2025-03-12T23:48:50+07:00 level=debug msg=2025-03-11T10:56:49+00:00
+time=2025-03-12T23:48:50+07:00 level=debug msg= cekk : {
+  "sample": "2025-03-12T16:48:50+00:00"
+}
+time=2025-03-12T23:48:50+07:00 level=debug msg=2025-03-11T03:56:49+00:00
+time=2025-03-12T23:48:50+07:00 level=debug msg= Diagnosa Temp -> {
+				"system": "http://hl7.org/fhir/sid/icd-10",
+				"code": "1",
+				"display": "Diagnosa 1"
+			},{
+				"system": "http://hl7.org/fhir/sid/icd-10",
+				"code": "2",
+				"display": "Diagnosa 2"
+			}
+time=2025-03-12T23:48:50+07:00 level=debug msg=Transaction error, rolled back : success
+time=2025-03-12T23:49:11+07:00 level=debug msg=Init log successfully setup
+time=2025-03-12T23:49:11+07:00 level=debug msg=Connecting to database postgresql://sts:*****@localhost:5433/satusehat?pool_max_conns=5&pool_min_conns=1&application_name=GoleafApp&pool_max_conn_idle_time=30s
+time=2025-03-12T23:49:11+07:00 level=info msg=Starting pool with max connection  5
+time=2025-03-12T23:49:11+07:00 level=debug msg=Do once Init server
+time=2025-03-12T23:49:11+07:00 level=debug msg=USE NewFluentdLoggerMdIn
+time=2025-03-12T23:49:11+07:00 level=debug msg=USE NewFluentdLoggerMdOut
+time=2025-03-12T23:49:11+07:00 level=debug msg=2025-03-11T10:56:49+00:00
+time=2025-03-12T23:49:11+07:00 level=debug msg= cekk : {
+  "sample": "2025-03-12T16:49:11+00:00"
+}
+time=2025-03-12T23:49:11+07:00 level=debug msg=2025-03-11T03:56:49+00:00
+time=2025-03-12T23:49:11+07:00 level=debug msg= Diagnosa Temp -> {
+				"system": "http://hl7.org/fhir/sid/icd-10",
+				"code": "1",
+				"display": "Diagnosa 1"
+			},{
+				"system": "http://hl7.org/fhir/sid/icd-10",
+				"code": "2",
+				"display": "Diagnosa 2"
+			},{
+				"system": "http://hl7.org/fhir/sid/icd-10",
+				"code": "3",
+				"display": "Diagnosa 3"
+			}
+time=2025-03-12T23:49:11+07:00 level=debug msg=Transaction error, rolled back : success
+time=2025-03-12T23:49:21+07:00 level=debug msg=Init log successfully setup
+time=2025-03-12T23:49:21+07:00 level=debug msg=Connecting to database postgresql://sts:*****@localhost:5433/satusehat?pool_max_conns=5&pool_min_conns=1&application_name=GoleafApp&pool_max_conn_idle_time=30s
+time=2025-03-12T23:49:21+07:00 level=info msg=Starting pool with max connection  5
+time=2025-03-12T23:49:21+07:00 level=debug msg=Do once Init server
+time=2025-03-12T23:49:21+07:00 level=debug msg=USE NewFluentdLoggerMdIn
+time=2025-03-12T23:49:21+07:00 level=debug msg=USE NewFluentdLoggerMdOut
+time=2025-03-12T23:49:21+07:00 level=debug msg=2025-03-11T10:56:49+00:00
+time=2025-03-12T23:49:21+07:00 level=debug msg= cekk : {
+  "sample": "2025-03-12T16:49:21+00:00"
+}
+time=2025-03-12T23:49:21+07:00 level=debug msg=2025-03-11T03:56:49+00:00
+time=2025-03-12T23:49:21+07:00 level=debug msg= Diagnosa Temp -> 
+time=2025-03-12T23:49:21+07:00 level=debug msg=Transaction error, rolled back : success
+time=2025-03-12T23:49:39+07:00 level=debug msg=Init log successfully setup
+time=2025-03-12T23:49:39+07:00 level=debug msg=Connecting to database postgresql://sts:*****@localhost:5433/satusehat?pool_max_conns=5&pool_min_conns=1&application_name=GoleafApp&pool_max_conn_idle_time=30s
+time=2025-03-12T23:49:39+07:00 level=info msg=Starting pool with max connection  5
+time=2025-03-12T23:49:39+07:00 level=debug msg=Do once Init server
+time=2025-03-12T23:49:39+07:00 level=debug msg=USE NewFluentdLoggerMdIn
+time=2025-03-12T23:49:39+07:00 level=debug msg=USE NewFluentdLoggerMdOut
+time=2025-03-12T23:49:39+07:00 level=debug msg=2025-03-11T10:56:49+00:00
+time=2025-03-12T23:49:39+07:00 level=debug msg= cekk : {
+  "sample": "2025-03-12T16:49:39+00:00"
+}
+time=2025-03-12T23:49:39+07:00 level=debug msg=2025-03-11T03:56:49+00:00
+time=2025-03-12T23:49:39+07:00 level=debug msg= Diagnosa Temp -> {
+				"system": "http://hl7.org/fhir/sid/icd-10",
+				"code": "1",
+				"display": "Diagnosa 1"
+			}
+time=2025-03-12T23:49:39+07:00 level=debug msg=Transaction error, rolled back : success

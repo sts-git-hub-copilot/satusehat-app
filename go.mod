@@ -7,13 +7,13 @@ require (
 	git.solusiteknologi.co.id/goleaf/glautonumber v0.0.0-20240320020750-8782e61d66a7
 	git.solusiteknologi.co.id/goleaf/glcommon v0.0.0-20250106024517-ab5f9da90f4e
 	git.solusiteknologi.co.id/goleaf/glmail v0.0.0-20240320022527-2a93dd00d3b6
-	git.solusiteknologi.co.id/goleaf/glqueue v0.0.0-20240816094016-4fc7165fd5c9 // indirect
+	git.solusiteknologi.co.id/goleaf/glqueue v0.0.0-20240816094016-4fc7165fd5c9
 	git.solusiteknologi.co.id/goleaf/glrecaptcha v0.0.0-20240320022706-82e533736dc8
 	git.solusiteknologi.co.id/goleaf/glwebhook v0.0.0-20240821061500-2bfcb19e968c
 	git.solusiteknologi.co.id/goleaf/goleafcore v0.16.0
 	github.com/arsmn/fiber-swagger/v2 v2.31.1
 	github.com/gofiber/fiber/v2 v2.52.5
-	github.com/sirupsen/logrus v1.9.2
+	github.com/sirupsen/logrus v1.9.3
 	github.com/swaggo/swag v1.8.11
 )
 
@@ -50,7 +50,7 @@ require (
 	github.com/mattn/go-runewidth v0.0.15 // indirect
 	github.com/mcuadros/go-defaults v1.2.0 // indirect
 	github.com/rivo/uniseg v0.4.4 // indirect
-	github.com/shopspring/decimal v1.3.1 // indirect
+	github.com/shopspring/decimal v1.3.1
 	github.com/swaggo/files v0.0.0-20220728132757-551d4a08d97a // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasthttp v1.51.0 // indirect
@@ -67,9 +67,16 @@ require (
 )
 
 require (
+	git.solusiteknologi.co.id/goleaf/glhttp v0.0.0-20231016104620-786a8e011e47
+	git.solusiteknologi.co.id/goleaf/glregistration v0.0.0-20240531023357-8e3c6c43d1cf
+)
+
+require (
 	github.com/kr/pretty v0.3.0 // indirect
 	github.com/stretchr/testify v1.8.4 // indirect
 )
+
+// replace git.solusiteknologi.co.id/goleaf/glregistration => ../../kbd/glregistration
 
 // replace git.solusiteknologi.co.id/goleaf/goleafcore => ../../kbd/goleafcore
 

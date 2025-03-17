@@ -11,11 +11,15 @@ import (
 	"git.solusiteknologi.co.id/goleaf/glcommon"
 	"git.solusiteknologi.co.id/goleaf/glmail"
 	"git.solusiteknologi.co.id/goleaf/glmail/model"
+	"git.solusiteknologi.co.id/goleaf/glqueue"
+	"git.solusiteknologi.co.id/goleaf/glqueue/config"
 	"git.solusiteknologi.co.id/goleaf/glrecaptcha"
+	"git.solusiteknologi.co.id/goleaf/glregistration"
 	"git.solusiteknologi.co.id/goleaf/glwebhook"
 	"git.solusiteknologi.co.id/goleaf/goleafcore"
 	"git.solusiteknologi.co.id/goleaf/goleafcore/glutil"
 	"git.solusiteknologi.co.id/sts-satusehat/ssbackend/constants"
+	satusehat "git.solusiteknologi.co.id/sts-satusehat/ssbackend/pkg"
 	swagger "github.com/arsmn/fiber-swagger/v2"
 	"github.com/gofiber/fiber/v2"
 
@@ -48,6 +52,10 @@ func ConfigureFiber(app *fiber.App) {
 		},
 	})
 
+	glqueue.Setup(config.Config{
+		AutoFetchInterval: glutil.GetEnv(constants.ENV_CHECK_QUEUE_INTERVAL, "10s"),
+	})
+
 	glcommon.Setup(app, glcommon.Config{
 		ApiPrefix:               apiPrefix,
 		Middleware:              glauth.MiddlewareTask,
@@ -69,6 +77,18 @@ func ConfigureFiber(app *fiber.App) {
 		RecaptchaSecretKey: glutil.GetEnv(constants.ENV_RECAPTCHA_SECRET_KEY),
 		Middleware:         glauth.NewAnnonymousMiddleware(),
 		ApiPrefix:          apiPrefix,
+	})
+
+	glregistration.Setup(app, glregistration.Config{
+		ApiPrefix:               apiPrefix,
+		Middleware:              glauth.NewAnnonymousMiddleware(),
+		MailConfig:              getMailConfig(),
+		EnableUserSchemaMapping: enableUserSchemaMapping,
+	})
+
+	satusehat.Setup(app, satusehat.Config{
+		ApiPrefix:  apiPrefix,
+		Middleware: glauth.MiddlewareTask,
 	})
 }
 

@@ -1,0 +1,32 @@
+package tables
+
+const KB_COMBO_VALUE_EXT = "kb_combo_value_ext"
+const T_COMBO = "t_combo"
+const T_COMBO_VALUE = "t_combo_value"
+const T_PARAMETER = "t_parameter"
+const T_POLICY = "t_policy"
+const T_POLICY_OU = "t_policy_ou"
+const T_RESET_PASSWORD = "t_reset_password"
+const T_ROLE = "t_role"
+const T_ROLE_TASK = "t_role_task"
+const T_SYSTEM_CONFIG = "t_system_config"
+const T_TENANT = "t_tenant"
+const T_TASK = "t_task"
+const T_USER = "t_user"
+const T_USER_ROLE = "t_user_role"
+const T_USER_PROPS = "t_user_props"
+
+const (
+	SS_DOCTOR       = "ss_doctor"
+	SS_PATIENT      = "ss_patient"
+	SS_LOCATION     = "ss_location"
+	SS_TRX          = "ss_trx"
+	SS_TRX_ITEM     = "ss_trx_item"
+	SS_TOKEN        = "ss_token"
+	SS_RESPONSE_LOG = "ss_response_log"
+	SS_DIAGNOSA     = "ss_diagnosa"
+	SS_AMNANESA     = "ss_anamnesa"
+	SS_TRX_DIAGNOSA = "ss_trx_diagnosa"
+	SS_TRX_AMNANESA = "ss_trx_anamnesa"
+	SS_TRX_IDSSEN   = "ss_trx_idssen"
+)
